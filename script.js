@@ -9,13 +9,14 @@ var grantsLives = 3
 var userWins = 0
 var grantWins = 0
 
-while (userHealth > 0 && grantsLives >= 1) {
-    var randomNumber = Math.floor(Math.random()*(2-1+1)+1);
-    userHealth -= randomNumber;
-    grantHealth -= randomNumber;
+while (userHealth > 0 && grantHealth > 0 && grantsLives > 0) {
+    var grantDamage = Math.floor(Math.random()*(2-1+1)+1);
+    var userDamage = Math.floor(Math.random()*(2-1+1)+1);
+    userHealth -= userDamage;
+    grantHealth -= grantDamage;
     console.log(name + " has  " + userHealth + " health left.");
     console.log("Grant has " + grantHealth + " health left.");
-    if (grantHealth === 0) {
+    if (grantHealth < 1) {
         grantsLives--;
         userWins++;
         console.log("Grant has " + grantsLives + " lives left.");
