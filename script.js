@@ -26,7 +26,7 @@ function startCombat() {
         }
         if (grantsLives === 0) {
             console.log(user + " is the winner!");
-        } else if (userHealth === 0){
+        } else if (userHealth <= 0){
             console.log("Grant is the winner!");
         }
     }
