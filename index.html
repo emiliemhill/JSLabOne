@@ -1,13 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <script src="script2.js"></script>
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Grant the All Mighty</title>
 </head>
+
 <body>
-    
+    <main>
+        <div id="game">
+        <div id="begin">
+            <button id="startButton">Start</button>
+        </div>
+        <div id="buttonSelect">
+            <button id="attackButton">Attack</button>
+            <button id="healButton">Heal</button>
+            <button id="quitButton">Quit</button>
+        </div>
+        <p id="message"> </p>
+        <div id="userBars">
+            <h1>Your Health</h1>
+            <progress id="userHealth" value="40" max="40"></progress>
+            <h1>Your Heals Remaining</h1>
+            <progress id="userHeals" value="2" max="2"></progress>
+            <h1>Your Wins!</h1>
+            <progress id="userWins" value="0" max="5"></progress>
+        </div>
+
+        <div id="grantBars">
+            <h1>Grant's Health</h1>
+            <progress id="grantHealth" value="10" max="10"></progress>
+        </div>
+        </div>
+
+
+    </main>
+    <script src="script3.js"></script>
 </body>
+
 </html>

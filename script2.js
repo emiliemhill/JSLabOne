@@ -43,7 +43,7 @@ function startCombat() {
             while (user.healsRemaining > 0) {
                 user.heals += user.health;
                 user.healsRemaining--;
-                console.log(user.name + "has " + user.health + " health now!");
+                console.log(user.name + " has " + user.health + " health now!");
             }
 
         } if (choice === "quit") {
