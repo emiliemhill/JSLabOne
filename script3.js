@@ -32,6 +32,8 @@
 
     startButton.onclick = function () {
         user.name = prompt("What is your name?");
+        startButton.classList.add("hideStartButton");
+        game.classList.remove("hidden");
     }
 
     attackButton.onclick = function () {

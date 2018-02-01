@@ -29,3 +29,6 @@ button {
 h1 {
     font-size: 25px;
 }
+.hidden {
+    display: hidden;
+}
